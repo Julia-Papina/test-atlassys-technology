@@ -1,32 +1,62 @@
 .profile {
-    width: 100%;
-    background-color: #F5F7FA;
-    padding: 30px 40px 178px 40px;
-    &__container {
-        padding: 30px 40px 178px 40px;
-        background-color: #FFFFFF;
-        border-radius: 25px;
-    }
-    &__form {
-     
-    }
+  width: 100%;
+  background-color: #f5f7fa;
+  padding: 30px 30px 178px 30px;
+  box-sizing: border-box;
+  &__container {
+    padding: 30px 30px 178px 30px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  &__form {
+    margin-top: 52px;
+    display: flex;
+    gap: 53px;
+  }
+  &__fieldset {
+    display: flex;
+    gap: 29px;
     
+  }
+  &__fieldsetItem {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+ &__input {
+    border: 1px solid #DFEAF2;
+    border-radius: 15px;
+    padding: 16px 20px;
+    color: #718EBF;
+    outline: none;
+    width: 418px;
+    box-sizing: border-box;
+    
+ }
 }
 
 .navigation {
-    display: flex;
-    gap: 76px;
-    &__link {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19.36px;
-        text-decoration: none;
-        color: #718EBF;
-        &:hover {
-            border-bottom: 3px solid #1814F3;
-            color: #1814F3;
-            
-        }
+  display: flex;
+  gap: 76px;
+  &__link {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-decoration: none;
+    color: #718ebf;
+    &:hover {
+      border-bottom: 3px solid #1814f3;
+      color: #1814f3;
     }
+  }
+}
+.avatar {
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
 }
