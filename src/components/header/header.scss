@@ -1,73 +1,83 @@
 .header {
+  display: flex;
+  padding: 20px 40px 20px 44px;
+  &__container {
+    width: 100%;
     display: flex;
-    padding: 20px 40px 20px 44px;
-    &__container {
-        width: 100%;
-        display: flex;
-       justify-content: space-between;
-       align-items: center;
-        
-    
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__logoImg {
+    width: 36px;
+    height: 36px;
+    @media screen and (max-width: 932px) {
+      display: none;
     }
-    &__logo {
-        display: flex;
-        gap: 9px;
-        align-items: center;
-        cursor: pointer;
+  }
+  &__logoTitle {
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 31.95px;
+    color: #343c6a;
+    @media screen and (max-width: 932px) {
+      display: none;
     }
-    &__logoImg {
-        width: 36px;
-        height: 36px;
+  }
+  &__burger {
+    display: none;
+    @media screen and (max-width: 932px) {
+      display: block;
     }
-    &__logoTitle {
-        font-family: 'Mont';
-        font-weight: 900;
-        font-size: 25px;
-        line-height: 31.95px;
-        color: #343C6A;
-        ;
+  }
+  &__settings {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__settingsTitle {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33.89px;
+    color: #343c6a;
+    margin-left: 63px;
+  }
+  &__settingsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  &__inputSearch {
+    display: flex;
+    background-color: #f5f7fa;
+    border-radius: 40px;
+    padding: 15px 25px;
+    gap: 15px;
+    @media screen and (max-width: 660px) {
+      display: none;
     }
-    &__settings {
-        display: flex;
-        justify-content: space-between;
-      
+  }
+  &__input {
+    border: none;
+    background-color: #f5f7fa;
+    outline: none;
+  }
+  &__settingItem {
+    background-color: #f5f7fa;
+    padding: 13px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (max-width: 932px) {
+      display: none;
     }
-    &__settingsTitle {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 33.89px;
-        color: #343C6A;
-        margin-left: 63px;
-    
-    }
-    &__settingsList {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-    }
-    &__inputSearch {
-        display: flex;
-        background-color: #F5F7FA;
-        border-radius: 40px;
-        padding: 15px 25px;
-        gap: 15px;
-    }
-    &__input {
-        border: none;
-        background-color: #F5F7FA;
-        outline: none;
-        
-    }
-    &__settingItem {
-        background-color: #F5F7FA;
-        padding: 13px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-
-    }
+  }
 }

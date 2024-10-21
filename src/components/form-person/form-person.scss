@@ -3,21 +3,41 @@
   background-color: #f5f7fa;
   padding: 30px 30px 178px 30px;
   box-sizing: border-box;
+  @media screen and (max-width: 495px) {
+    padding: 25px;
+  }
   &__container {
-    padding: 30px 30px 178px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
     background-color: #ffffff;
     border-radius: 25px;
     box-sizing: border-box;
+    @media screen and (max-width: 495px) {
+      padding: 20x;
+    }
   }
   &__form {
     margin-top: 52px;
     display: flex;
     gap: 53px;
+    @media screen and (max-width: 1424px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and (max-width: 743px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__fieldset {
     display: flex;
     gap: 29px;
-    
+    @media screen and (max-width: 1424px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   &__fieldsetItem {
     display: flex;
@@ -27,21 +47,61 @@
     margin: 0;
     padding: 0;
   }
- &__input {
-    border: 1px solid #DFEAF2;
+  &__input {
+    border: 1px solid #dfeaf2;
     border-radius: 15px;
     padding: 16px 20px;
-    color: #718EBF;
+    color: #718ebf;
     outline: none;
     width: 418px;
     box-sizing: border-box;
-    
- }
+    @media screen and (max-width: 743px) {
+      width: 100%;
+    }
+  }
+  &__label {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #232323;
+  }
+
+  &__buttonContainer {
+    width: 190px;
+    padding-top: 30px;
+    margin-left: auto;
+    box-sizing: border-box;
+    @media screen and (max-width: 743px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 1424px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+  &__button {
+    width: 100%;
+    background-color: #1814f3;
+    padding: 14px 74px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 }
 
 .navigation {
   display: flex;
   gap: 76px;
+  @media screen and (max-width: 495px) {
+    gap: 42px;
+  }
   &__link {
     font-family: "Inter";
     font-weight: 500;
@@ -53,10 +113,13 @@
       border-bottom: 3px solid #1814f3;
       color: #1814f3;
     }
+    @media screen and (max-width: 495px) {
+      font-size: 13px;
+    }
   }
 }
 .avatar {
-    width: 130px;
-    height: 130px;
-    cursor: pointer;
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
 }

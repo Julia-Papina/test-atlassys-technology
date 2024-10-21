@@ -4,6 +4,7 @@ import settingsImg from "../../assets/images/settings-1.png";
 import bellImg from "../../assets/images/settings-2.png";
 import avatar from "../../assets/images/avatar.png";
 import magnifyingImg from "../../assets/images/magnifying.png";
+import burger from "../../assets/images/Group692.png";
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
         <div className="header__logo">
           <img src={creditCard} className="header__logoImg" />
           <h1 className="header__logoTitle">BankDash.</h1>
+          <img src={burger} className="header__burger" />
           <h2 className="header__settingsTitle">Setting</h2>
         </div>
 

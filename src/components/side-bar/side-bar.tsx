@@ -9,7 +9,7 @@ const SideBar = () => {
         {linksSideBarArray.map((item, i) => (
           <NavLink key={i} className="side-bar__item" to={item.path}>
             <img src={item.image} />
-           {item.title}
+            {item.title}
           </NavLink>
         ))}
       </div>

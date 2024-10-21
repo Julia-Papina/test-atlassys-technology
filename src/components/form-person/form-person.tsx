@@ -23,29 +23,29 @@ const FormProfile = () => {
           </div>
           <div className="profile__fieldset">
             <fieldset className="profile__fieldsetItem">
-              <label>Your Name</label>
+              <label className="profile__label">Your Name</label>
               <input
                 type="text"
                 placeholder="Charlene Reed"
                 className="profile__input"
               />
-              <label>Email</label>
+              <label className="profile__label">Email</label>
               <input
                 type="e-mail"
                 placeholder="charlenereed@gmail.com "
                 className="profile__input"
               />
-              <label>Date of Birth</label>
+              <label className="profile__label">Date of Birth</label>
               <select className="profile__input">
                 <option>25 January 1990</option>
               </select>
-              <label>Permanent Address</label>
+              <label className="profile__label">Permanent Address</label>
               <input
                 type="text"
                 placeholder="San Jose, California, USA"
                 className="profile__input"
               />
-              <label>Postal Code</label>
+              <label className="profile__label">Postal Code</label>
               <input
                 type="text"
                 placeholder="45962"
@@ -53,35 +53,44 @@ const FormProfile = () => {
               />
             </fieldset>
             <fieldset className="profile__fieldsetItem">
-              <label>Your Name</label>
+              <label className="profile__label">Your Name</label>
               <input
                 type="text"
                 placeholder="Charlene Reed"
                 className="profile__input"
               />
-              <label>Password</label>
+              <label className="profile__label">Password</label>
               <input
                 type="password"
                 placeholder="**********"
                 className="profile__input"
               />
-              <label>Present Address</label>
+              <label className="profile__label">Present Address</label>
               <input
                 type="text"
                 placeholder="San Jose, California, USA"
                 className="profile__input"
               />
-              <label>City</label>
+              <label className="profile__label">City</label>
               <input
                 type="text"
                 placeholder="San JoseA"
                 className="profile__input"
               />
-              <label>Country</label>
+              <label className="profile__label">Country</label>
               <input type="text" placeholder="USA" className="profile__input" />
             </fieldset>
           </div>
         </form>
+        <div className="profile__buttonContainer">
+          <button
+            className="profile__button"
+            type="submit"
+            onClick={(evt) => evt.preventDefault()}
+          >
+            Save
+          </button>
+        </div>
       </div>
     </section>
   );

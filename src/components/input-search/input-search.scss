@@ -1,0 +1,16 @@
+.inputSearch__container {
+   display: none;
+    @media screen and (max-width: 660px) {
+        display: flex;
+        background-color: #f5f7fa;
+        border-radius: 40px;
+        padding: 15px 25px;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+  }
+  .inputSearch__item {
+    border: none;
+    background-color: #f5f7fa;
+    outline: none;
+  }

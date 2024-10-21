@@ -1,7 +1,9 @@
 .side-bar {
   display: flex;
-
   padding: 31px 38px 0 44px;
+  @media screen and (max-width: 985px) {
+    display: none;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -10,7 +12,6 @@
   &__item {
     display: flex;
     gap: 26px;
-    // justify-content: center;
     align-items: center;
     cursor: pointer;
     text-decoration: none;

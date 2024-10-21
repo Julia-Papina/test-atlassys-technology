@@ -1,22 +1,22 @@
-import Header from './components/header/header';
-import SideBar from './components/side-bar/side-bar';
-import FormProfile from './components/form-person/form-person';
-import './App.css'
+import Header from "./components/header/header";
+import SideBar from "./components/side-bar/side-bar";
+import FormProfile from "./components/form-person/form-person";
+import InputSearch from "./components/input-search/input-search";
+import "./App.css";
 
 function App() {
   return (
     <>
-    <Header/>
-    <main className='wrapper'>
-      <SideBar />
-      <FormProfile />
-
-    </main>
+      <Header />
+      <div>
+        <InputSearch/>
+      </div>
+      <main className="wrapper">
+        <SideBar />
+        <FormProfile />
+      </main>
     </>
-  
-    
-  
-  )
+  );
 }
 
-export default App
+export default App;
