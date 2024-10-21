@@ -1,0 +1,27 @@
+.side-bar {
+  display: flex;
+
+  padding: 31px 38px 0 44px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  &__item {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #b1b1b1;
+    margin: 0;
+    &:hover {
+      color: #1814f3;
+    }
+  }
+}
