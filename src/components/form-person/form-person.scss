@@ -14,7 +14,7 @@
     border-radius: 25px;
     box-sizing: border-box;
     @media screen and (max-width: 495px) {
-      padding: 20x;
+      padding: 20px;
     }
   }
   &__form {
@@ -99,8 +99,13 @@
 .navigation {
   display: flex;
   gap: 76px;
+  border-bottom: 1px solid #f4f5f7;
+  box-sizing: border-box;
+  height: 30px;
+
   @media screen and (max-width: 495px) {
     gap: 42px;
+    height: 25px;
   }
   &__link {
     font-family: "Inter";
@@ -109,12 +114,21 @@
     line-height: 19.36px;
     text-decoration: none;
     color: #718ebf;
+    padding: 0 8px 8px;
+    box-sizing: border-box;
     &:hover {
-      border-bottom: 3px solid #1814f3;
+      border-bottom: 3px solid #1814f3;  
       color: #1814f3;
     }
-    @media screen and (max-width: 495px) {
+
+    @media screen and (max-width: 584px) {
       font-size: 13px;
+      line-height: 15.73px;
+      padding: 0;
+      min-width: 68px;
+      &:hover {
+        border-bottom: 2px solid #1814f3;
+      }
     }
   }
 }

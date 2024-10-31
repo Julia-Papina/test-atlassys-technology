@@ -8,7 +8,7 @@ const SideBar = () => {
       <div className="side-bar__container">
         {linksSideBarArray.map((item, i) => (
           <NavLink key={i} className="side-bar__item" to={item.path}>
-            <img src={item.image} />
+            <img src={item.image} className="side-bar__icon" />
             {item.title}
           </NavLink>
         ))}

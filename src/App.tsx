@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <div>
-        <InputSearch/>
+      <div className="input-container">
+        <InputSearch />
       </div>
       <main className="wrapper">
         <SideBar />

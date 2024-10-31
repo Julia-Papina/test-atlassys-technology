@@ -1,6 +1,9 @@
 .side-bar {
   display: flex;
   padding: 31px 38px 0 44px;
+  width: 211px;
+  background-color: #ffffff;
+  border-right: 1px solid #e6eff5;
   @media screen and (max-width: 985px) {
     display: none;
   }
@@ -21,8 +24,18 @@
     line-height: 21.78px;
     color: #b1b1b1;
     margin: 0;
-    &:hover {
+    &:hover,
+    &_active {
       color: #1814f3;
+      .side-bar__icon {
+        fill: #1814f3;
+        stroke: #1814f3;
+      }
     }
+  }
+
+  &__icon {
+    fill: #b1b1b1;
+    stroke: #b1b1b1;
   }
 }

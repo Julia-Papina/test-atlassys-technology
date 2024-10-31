@@ -6,7 +6,7 @@ const FormProfile = () => {
   return (
     <section className="profile">
       <div className="profile__container">
-        <div className="navigation">
+        <nav className="navigation">
           <NavLink to={"#"} className="navigation__link">
             Edit Profile
           </NavLink>
@@ -16,7 +16,7 @@ const FormProfile = () => {
           <NavLink to={"#"} className="navigation__link">
             Security
           </NavLink>
-        </div>
+        </nav>
         <form className="profile__form">
           <div>
             <img src={avatar} className="avatar" />
